@@ -1,0 +1,258 @@
+*{
+    font-family: "Poppins", sans-serif;
+}
+.navbar{
+    
+    display: flex;
+    padding: 20px 30px;
+    justify-content: space-between;
+
+}
+.navbar a{
+    text-decoration: none;
+    color: white;
+}
+
+.icon{
+    display: flex;
+    padding: 5px;
+    border: 1px solid white;
+    border-radius: 50%;
+    display: none;
+}
+
+.zomlogo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.right-top{
+    display: flex;
+    gap: 10px;
+}
+.top-container{
+    min-height: 60vh;
+    background-image: url(images/top\ bg.png);
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+.logo{
+    font-size: 40px;
+    text-align: center;
+}
+.logo-des{
+    padding: 10px;
+    font-size: 100%;
+    text-align: center;
+
+}
+.top-input-c{
+    width: 90%;
+    margin: 10px;
+    display: flex;
+   align-items: center;
+   justify-content: center;
+
+}
+.top-input{
+    width: 60%;
+   background-color: white;
+   padding: 10px;
+   border-radius: 20px;
+   gap: 20px;
+   overflow: hidden;
+   flex-wrap: wrap;
+}
+.loc,.search{
+    padding: 5px;
+   border-radius: 20px;
+   border-style: none;
+   outline: none; 
+}
+.loc{
+    width: 30%;
+    border-right: 2px solid grey;
+    
+}
+.search{
+    width: 60%;
+}
+.loc_search:focus{
+    border-style: none;
+}
+
+@media only screen and (max-width:720px) {
+    .as{
+        display:  none;
+    }
+    
+    .icon{
+        display: flex;
+    }
+    
+    
+    .top-container{
+        height: 80vh;
+    }
+    .loc,.search{
+        margin: 10px;
+        padding: 10px;
+        border-radius: 5px;
+        width:90%;
+        border-style: none;
+
+
+    }
+    .top-input{
+        background-color: transparent;
+    }
+
+    
+
+    
+}
+
+/*----This block for services----*/
+.serv{
+
+    width: 90%;
+    height: auto;
+    margin: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.serv div{
+    border-radius: 20px; 
+    border: 0.2px solid grey;
+    overflow: hidden;
+
+}
+.serv img{
+    width: 100%;
+    height: 175px;
+    object-fit: cover;
+    object-position: center;
+}
+.serv h3{
+    font-size: 18px;
+    font-weight: 300;
+    margin: 0px;
+    padding: 10px;
+    padding-bottom: 5px;
+}
+.serv p{
+    font-size: 13px;
+    margin: 0px;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+/* Collectios sectios*/
+
+.collection{
+    width: 90%;
+    margin: auto;
+    margin-top: 100px;
+}
+.col_desc{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    
+
+}
+.col_desc a{
+    text-decoration: none;
+    font-size: 14px;
+    cursor: pointer;
+    color: red;
+}
+
+.collection h2{
+    margin: 0;
+}
+
+.col_img{
+    width:85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: auto;
+    gap: 10px;
+    margin-top: 20px;
+    color: white;
+    
+}
+
+.img_con1{
+    width: 200px;
+    height: 250px;
+    background-image: url(images/collection1.jpg);
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+
+.img_con2{
+    width: 200px;
+    height: 250px;
+    background-image: url(images/collection2.jpg);  
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+
+.img_con3{
+    width: 200px;
+    height: 250px;
+    background-image: url(images/collection3.jpg); 
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+
+.img_con4{
+    width: 200px;
+    height: 250px;
+    background-image: url(images/collection4.jpg);
+    border-radius: 5px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    
+}
+
+.col_p{
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    padding: 5px;
+
+}
+
+.col_p p,span{
+   margin:0; 
+}
+
+.overlay{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 10px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.9)0%, rgba(0, 0, 0, 0.05)50%, rgba(0, 0, 0, 0.03)75%, rgba(0, 0, 0, 0)100%);
+}
